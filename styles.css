@@ -1,0 +1,287 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F2EFEA;
+    color: #102A2E
+}
+
+.banner {
+    background-image: url(./images/banner-img.jpg);
+    height: 15rem;
+    background-size: cover;
+
+}
+
+.page-title {
+    color: whitesmoke;
+    font-size: 5rem;
+    margin: 0;
+    padding: 35px 0 0 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px black;
+}
+
+.subheading {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 0 0 0 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px black;
+}
+
+.item-list {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid gray;
+    gap: 10px;
+}
+
+.item-img {
+    max-width: 30%;
+    min-width: 200px;
+}
+
+.item-content {
+    max-width: 45%;
+    min-width: 300px
+}
+
+.emphasise {
+    font-weight: bold;
+}
+
+.item-btns {
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.size-selector {
+    width: 120px;
+    color: #102A2E;
+    text-align: center;
+}
+
+.length-selector {
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    width: 120px;
+}
+
+.add-to-cart {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1FA2A6;
+    color: whitesmoke;
+    border: none;
+}
+
+.add-to-cart:hover {
+    background-color: #16858A;
+    transition: 0.5s;
+}
+
+.add-to-cart:active {
+    background-color: #eeba0e;
+    color: #16858A;
+    transition: 0s;
+}
+
+.reciept {
+    width: 40%;
+    margin: 100px auto;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 5px 5px 15px rgb(201, 200, 200);
+}
+
+thead, table {
+    width: 100%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.column-item {
+    width: 50%;
+}
+
+.jump-to-cart {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    width: 120px;
+    height: 80px;
+    font-size: 1rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #1FA2A6;
+    color: whitesmoke;
+    border: none;
+    text-decoration: none;
+}
+
+.jump-to-cart:hover {
+    background-color: #16858A
+    transition: 0.5s;
+}
+
+.jump-to-cart:active {
+    background-color: #eeba0e;
+    color: #16858A;
+}
+
+footer {
+    margin-top: 90px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 
+🎨 Alpine River Palette
+
+1️⃣ Primary — River Teal
+
+#1FA2A6
+
+Use for:
+	•	Primary buttons
+	•	Links
+	•	Active states
+	•	Icons
+	•	Highlights
+	•	Nav hover
+
+This is your “brand colour”.
+
+⸻
+
+2️⃣ Deep River — Navy Teal
+
+#0B3C49
+
+Use for:
+	•	Header background
+	•	Footer background
+	•	Hero overlay
+	•	Dark sections
+	•	Card headers
+	•	Text on light backgrounds (optional alternative to black)
+
+Gives depth. Think deep water.
+
+⸻
+
+3️⃣ Forest Accent
+
+#2E6F40
+
+Use for:
+	•	Secondary buttons
+	•	Tags (e.g. “Grade 3”, “Beginner”)
+	•	Success states
+	•	Subtle accents
+	•	Icons
+
+Adds outdoors warmth without overpowering.
+
+⸻
+
+4️⃣ Sand Background
+
+#F2EFEA
+
+Use for:
+	•	Main page background
+	•	Section backgrounds
+	•	Card backgrounds
+	•	Subtle panels
+
+This stops everything feeling cold or overly blue.
+
+⸻
+
+5️⃣ Primary Text
+
+#102A2E
+
+Use for:
+	•	Body text
+	•	Headings on light backgrounds
+	•	Navigation text
+
+It’s softer than pure black — more premium.
+
+⸻
+
+🧩 Optional Supporting Colours (if needed)
+
+Purpose	Colour
+Light border	#D8E3E4
+Hover state	Slightly darker teal #16858A
+Danger	#C44536
+
+
+⸻
+
+💡 Example Usage in a Real Layout
+
+🌊 Hero Section
+	•	Background: #0B3C49
+	•	Heading: White
+	•	CTA Button: #1FA2A6
+
+📦 Cards
+	•	Background: #F2EFEA
+	•	Title: #102A2E
+	•	Price: #1FA2A6
+	•	Tag: #2E6F40
+
+🔘 Primary Button
+
+Background: #1FA2A6
+Text: white
+Hover: #16858A
+
+⸻
+
+ */
