@@ -104,7 +104,7 @@ export const products = [
         model: "Weasel Throwline",
         type: "safety",
         description: "A compact and reliable throw rope designed for fast rescues on moving water. The HF Weasel features a durable rope, easy-grip bag and quick deployment design, making it an essential piece of safety gear for river paddling and group sessions.",
-        sizes: [One Size],
+        sizes: ['one size'],
         pricePerDayGBP: 3,
         maxRentalLengthDays: 14,
         image: "./images/product-images/hf-weasel-throwline-img.png" 
