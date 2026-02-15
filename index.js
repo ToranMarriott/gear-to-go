@@ -4,7 +4,7 @@ const itemListHtml = document.getElementById('item-list')
 const cart = document.getElementById('cart')
 const cartTotal = document.getElementById('cartTotal')
 const jumpToCart = document.getElementById('jump-to-cart')
-const reciept = document.getElementById('reciept')
+const receipt = document.getElementById('receipt')
 const orderBtn = document.getElementById('order-btn')
 const modal = document.getElementById('modal')
 const modalExitBtn = document.getElementById('modal-exit-btn')
@@ -71,7 +71,7 @@ cart.addEventListener('click', function(e){
 function createCart(items){
     cart.innerHTML = items.map(function(item, index){
         return `
-        <tr class="reciept-item">
+        <tr class="receipt-item">
             <td class="align-left">${item.brand} ${item.model} <button class="remove-btn" data-index="${index}"><i class="fa-solid fa-circle-xmark"></i></button></td>
             <td>${item.selectedSize}</td>
             <td>${item.selectedLength} days</td>
@@ -85,10 +85,10 @@ function createCart(items){
     cartTotal.innerHTML = '£' + totalSpend
     if (selectedItems.length === 0){
         jumpToCart.classList.add('hidden')
-        reciept.classList.add('hidden')
+        receipt.classList.add('hidden')
     } else {
         jumpToCart.classList.remove('hidden')
-        reciept.classList.remove('hidden')
+        receipt.classList.remove('hidden')
     }
 }
 
