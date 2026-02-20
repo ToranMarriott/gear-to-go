@@ -183,8 +183,8 @@ thead, table {
 .modal {
     background-color: #16858A;
     color: whitesmoke;
-    width:80%;
-    height: 80%;
+    width: 80vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,4 +281,33 @@ footer {
 
 .align-center {
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .item-list {
+        width: 70%;
+    }
+
+    .item {
+        flex-direction: row;
+        
+    }
+
+    .item-img {
+        width: 30%;
+    }
+    .item-content {
+        width:45%;
+    }
+
+
+    .item-btns {
+        flex-direction: column;
+        width: 20%;
+    }
+
+    .modal {
+        width: 70vw;
+        height: 80vh;
+    }
 }

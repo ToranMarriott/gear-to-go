@@ -128,7 +128,7 @@ export const products = [
         description: "A lightweight kayaking cagoule designed to block wind and splash while remaining breathable. The Palm Centre Smock is ideal for cooler weather paddling, offering protection without restricting movement, making it a great layering piece for river sessions.",
         sizes: ["S", "M", "L", "XL"],
         pricePerDayGBP: 5,
-        maxRentalLengthDays: 7,
+        maxRentalLengthDays: 14,
         image: "./images/product-images/palm-centre-smock-img.png" 
     },
     {
