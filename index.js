@@ -33,7 +33,7 @@ function createItemListHtml(products) {
                         }).join('')}
                     </select>
                     <label for="rental-length" class="length-selector">Rental Length:
-                    <input type="number" class="rental-length" id="rental-length" max="${product.maxRentalLengthDays}" min="1" required></label>
+                    <input type="number" class="rental-length" id="rental-length" name="rental-length" max="${product.maxRentalLengthDays}" min="1" required></label>
                     <button class="add-to-cart" type="submit" data-product-id="${product.id}"><i class="fa-solid fa-cart-arrow-down"></i></button>
                 </div>
             </div>
