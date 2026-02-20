@@ -11,86 +11,86 @@ body {
 
 .banner {
     background-image: url(./images/banner-img.jpg);
-    height: 15rem;
     background-size: cover;
-
+    background-position: 8%;
+    padding: 1em 0 2em 2em;
 }
 
 .page-title {
     color: whitesmoke;
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0;
-    padding: 35px 0 0 50px;
-    white-space: nowrap;
-    overflow: hidden;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 20px black;
 }
 
 .subheading {
     color: whitesmoke;
-    font-size: 1.5rem;
-    margin: 10px 0;
-    padding: 0 0 0 55px;
-    white-space: nowrap;
-    overflow: hidden;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
     font-weight: 500;
     text-shadow: 0px 0px 5px black;
 }
 
 .item-list {
-    width: 70%;
+    width: 80%;
     margin: 0px auto;
 }
 
 .item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 25px 0;
-    border-bottom: 1px solid gray;
-    gap: 10px;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgb(171, 167, 167);
+    gap: .5em;
 }
 
 .item-img {
-    max-width: 30%;
-    min-width: 200px;
+    width: 70%;
 }
 
-.item-content {
-    max-width: 45%;
-    min-width: 300px
+.item-content h2{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.item-content p{
+    font-size: .8rem;
+    margin: .6em 0;
 }
 
 .item-btns {
-    max-width: 20%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 1em;
 }
 
 .size-selector {
-    width: 120px;
+    width: auto;
     color: #102A2E;
     text-align: center;
+    margin-top: 1em;
+    height: 2em;
 }
 
 .length-selector {
     display: flex;
     flex-direction: column;
     font-size: .8rem;
-    width: 120px;
+    width: auto;
 }
 
 .add-to-cart {
     width: 60px;
     height: 60px;
-    font-size: 30px;
-    border-radius: 40%;
+    font-size: 2rem;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,12 +109,16 @@ body {
 }
 
 .receipt {
-    width: 40%;
-    margin: 100px auto;
+    width:80%;
+    margin: 2em auto;
     background-color: whitesmoke;
     text-align: center;
-    padding: 20px 15px;
+    padding: .8em 1em;
     box-shadow: 5px 5px 15px rgb(201, 200, 200);
+}
+
+.reciept h2{
+    font-size: 2rem;
 }
 
 thead, table {
@@ -136,9 +140,9 @@ thead, table {
     color: whitesmoke;
     border: none;
     margin-top: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    padding: 15px;
+    padding: .6em;
     border-radius: 10px;
 }
 
@@ -149,12 +153,12 @@ thead, table {
 
 .jump-to-cart {
     position: fixed;
-    top: 50%;
+    top: 25%;
     right: 5%;
-    width: 120px;
+    width: 80px;
     height: 80px;
     font-size: 1rem;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,6 +168,7 @@ thead, table {
     color: whitesmoke;
     border: none;
     text-decoration: none;
+    text-align: center;
 }
 
 .jump-to-cart:hover {
@@ -178,8 +183,8 @@ thead, table {
 .modal {
     background-color: #16858A;
     color: whitesmoke;
-    width: 30%;
-    height: 70%;
+    width:80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,7 +233,7 @@ thead, table {
     background-color: whitesmoke;
     color: #16858A;
     border: none;
-    margin-top: 2rem;
+    margin-top: 2em;
     font-size: 1.8rem;
     font-weight: 600;
     padding: 15px;
