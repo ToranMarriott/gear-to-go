@@ -26,5 +26,7 @@ https://gear-to-go.netlify.app/
 ## Next Improvements
 - Persist cart using localStorage  
 - Filter gear by category and size availability  
-- Improve mobile layout and accessibility  
+- Improve desktop layout and accessibility  
 - Add basic unit tests for calculation logic
+- Handle form data
+- Form submission message
